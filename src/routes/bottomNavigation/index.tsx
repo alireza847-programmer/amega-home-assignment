@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Dashboard from 'pages/dashboard';
 import {
@@ -8,8 +8,11 @@ import {
 } from 'routes/const';
 import texts from 'locales/en';
 import {PlusSvg} from 'assets/svgs';
+import Profile from 'pages/profile';
+import {BottomNavigationRoute} from 'types/routes/bottomNavigation';
+import MarketData from 'pages/marketData';
 
-const Tab = createBottomTabNavigator<any>();
+const Tab = createBottomTabNavigator<BottomNavigationRoute>();
 
 const {
   navigation: {dashboard, marketData, profile},
@@ -21,7 +24,12 @@ const renderIconColor = (focused: boolean) => {
   }
   return '#0087E0';
 };
-const tabs = [
+const tabs: {
+  label: string;
+  name: keyof BottomNavigationRoute;
+  componenet: (props: any) => React.JSX.Element;
+  icon: (props: {focused: boolean; color: string; size: number}) => ReactNode;
+}[] = [
   {
     label: dashboard,
     name: BOTTOM_NAVIGATION_DASHBOARD,
@@ -33,7 +41,7 @@ const tabs = [
   {
     label: marketData,
     name: BOTTOM_NAVIGATION_MARKET_DATA,
-    componenet: Dashboard,
+    componenet: MarketData,
     icon: ({focused, size}: {focused: boolean; size: number}) => (
       <PlusSvg fill={renderIconColor(focused)} width={size} height={size} />
     ),
@@ -41,7 +49,7 @@ const tabs = [
   {
     label: profile,
     name: BOTTOM_NAVIGATION_PROFILE,
-    componenet: Dashboard,
+    componenet: Profile,
     icon: ({focused, size}: {focused: boolean; size: number}) => (
       <PlusSvg fill={renderIconColor(focused)} width={size} height={size} />
     ),
