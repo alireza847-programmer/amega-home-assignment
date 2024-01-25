@@ -4,7 +4,7 @@ import VRow from './index';
 import {ThemeProvider} from '@emotion/react';
 import {theme} from 'themes/emotion';
 import {VRowProps} from 'types/components/uiElements/row';
-import {it, describe, expect, jest} from '@jest/globals';
+import {it, describe, expect} from '@jest/globals';
 
 const Component = (props: PropsWithChildren<VRowProps>) => (
   <ThemeProvider theme={theme}>
