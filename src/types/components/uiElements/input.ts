@@ -4,4 +4,6 @@ export interface InputProps {
   marginTopRatio?: number;
 }
 
-export interface VInputProps extends InputProps, TextInputProps {}
+export interface VInputProps extends InputProps, TextInputProps {
+  onPressButton: () => void;
+}
