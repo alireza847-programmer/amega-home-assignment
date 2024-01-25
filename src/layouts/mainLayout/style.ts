@@ -23,8 +23,8 @@ export const Header = styled(VRow)(({theme}) => ({
   elevation: 10,
 }));
 
-export const ChildrenWrapper = styled.View(({theme}) => ({
-  // paddingHorizontal: theme.HorizontalRem * 4,
+export const ChildrenWrapper = styled.View(({}) => ({
+  maxHeight: hp(80),
 }));
 
 export const CloseIcon = styled(VRow)(({theme}) => ({
