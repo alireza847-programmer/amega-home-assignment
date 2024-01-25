@@ -1,3 +1,25 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    // Path alias config
+    "baseUrl": ".",
+    "paths": {
+      "pages/*": ["src/pages/*"],
+      "pages": ["src/pages/"],
+      "routes/*": ["src/routes/*"],
+      "routes": ["src/routes/"],
+      // This needs to be mirrored in babel.config.js
+      "components/*": ["src/components/*"],
+      "utils/*": ["src/utils/*"],
+      "themes/*": ["src/themes/*"],
+      "types/*": ["src/types/*"],
+      "assets/*": ["src/assets/*"],
+      "layouts/*": ["src/layouts/*"],
+      "stories/*": ["src/stories/*"],
+      "locales/*": ["src/locales/*"],
+      "hooks/*": ["src/hooks/*"],
+      "stores/*": ["src/stores/*"],
+    }
+  }
 }
