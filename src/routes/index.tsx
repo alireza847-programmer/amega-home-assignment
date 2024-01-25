@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import Home from 'pages/home/index';
+import BottomNavigationStack from './bottomNavigation';
 
 const Routes = () => {
   return (
     <NavigationContainer>
-      <Home />
+      <BottomNavigationStack />
     </NavigationContainer>
   );
 };
