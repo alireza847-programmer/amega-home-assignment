@@ -5,31 +5,29 @@ import {MainLayoutProps} from 'types/layouts/mainLayout';
 import VRow from 'components/uiElements/row';
 import {CloseSvg} from 'assets/svgs';
 import {theme} from 'themes/emotion';
-import VButton from 'components/uiElements/button';
+import {TouchableOpacity} from 'react-native';
+import {useAppNavigation} from 'hooks/navigation';
 
 const MainLayout = (props: PropsWithChildren<MainLayoutProps>) => {
-  const {
-    children,
-    title = '',
-    withClose = true,
-    withHeader,
-    onClosePress = () => {},
-  } = props;
+  const {children, title = '', withClose = true, withHeader} = props;
+  const navigation = useAppNavigation();
   return (
     <Container>
       {withHeader && (
         <Header alignItems="center" justifyContent="center">
-          <CloseIcon fullWidth={false}>
-            {withClose && (
-              <VButton
-                styled="TEXT"
-                onPress={onClosePress}
-                icon={() => <CloseSvg fill={theme.colors.button.primary} />}
-              />
-            )}
-          </CloseIcon>
+          {withClose && (
+            <CloseIcon fullWidth={false}>
+              <TouchableOpacity
+                onPress={() => navigation.goBack()}
+                activeOpacity={0.8}>
+                <CloseSvg fill={theme.colors.button.primary} />
+              </TouchableOpacity>
+            </CloseIcon>
+          )}
           <VRow fullWidth={false}>
-            <VText typography="semiBold16">{title}</VText>
+            <VText color={theme.colors.button.primary} typography="semiBold18">
+              {title}
+            </VText>
           </VRow>
           <VRow fullWidth={false} />
         </Header>
