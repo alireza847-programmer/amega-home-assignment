@@ -1,0 +1,567 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainLayout component snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    justifyContent="center"
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingHorizontal": 0,
+          "paddingVertical": 0,
+          "width": "100%",
+        },
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "elevation": 10,
+            "height": 133.4,
+            "paddingTop": 40.019999999999996,
+            "shadowColor": "rgba(68, 80, 95, 0.20)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "width": 750,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          [
+            {
+              "left": 30,
+              "position": "absolute",
+              "top": 66.7,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          fill="#0071F3"
+        />
+      </View>
+    </View>
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        color="#0071F3"
+        style={
+          [
+            {
+              "color": "#0071F3",
+              "fontFamily": "Inter-SemiBold",
+              "fontSize": 18,
+              "marginLeft": 0,
+              "marginTop": 0,
+              "textAlign": "center",
+              "textAlignVertical": "center",
+            },
+            undefined,
+          ]
+        }
+        typography="semiBold18"
+      >
+        Your Title
+      </Text>
+    </View>
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "maxHeight": 1067.2,
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`MainLayout component snapshot with close button and custom right icon 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    justifyContent="center"
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingHorizontal": 0,
+          "paddingVertical": 0,
+          "width": "100%",
+        },
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "elevation": 10,
+            "height": 133.4,
+            "paddingTop": 40.019999999999996,
+            "shadowColor": "rgba(68, 80, 95, 0.20)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "width": 750,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          [
+            {
+              "left": 30,
+              "position": "absolute",
+              "top": 66.7,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          fill="#0071F3"
+        />
+      </View>
+    </View>
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        color="#0071F3"
+        style={
+          [
+            {
+              "color": "#0071F3",
+              "fontFamily": "Inter-SemiBold",
+              "fontSize": 18,
+              "marginLeft": 0,
+              "marginTop": 0,
+              "textAlign": "center",
+              "textAlignVertical": "center",
+            },
+            undefined,
+          ]
+        }
+        typography="semiBold18"
+      />
+    </View>
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "maxHeight": 1067.2,
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`MainLayout component snapshot with logo 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    justifyContent="center"
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingHorizontal": 0,
+          "paddingVertical": 0,
+          "width": "100%",
+        },
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#fff",
+            "elevation": 10,
+            "height": 133.4,
+            "paddingTop": 40.019999999999996,
+            "shadowColor": "rgba(68, 80, 95, 0.20)",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "width": 750,
+          },
+          undefined,
+        ],
+      ]
+    }
+  >
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          [
+            {
+              "left": 30,
+              "position": "absolute",
+              "top": 66.7,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <SvgMock
+          fill="#0071F3"
+        />
+      </View>
+    </View>
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        color="#0071F3"
+        style={
+          [
+            {
+              "color": "#0071F3",
+              "fontFamily": "Inter-SemiBold",
+              "fontSize": 18,
+              "marginLeft": 0,
+              "marginTop": 0,
+              "textAlign": "center",
+              "textAlignVertical": "center",
+            },
+            undefined,
+          ]
+        }
+        typography="semiBold18"
+      />
+    </View>
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "maxHeight": 1067.2,
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`MainLayout component snapshot without header 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "maxHeight": 1067.2,
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;

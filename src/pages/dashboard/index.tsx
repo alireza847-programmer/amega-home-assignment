@@ -13,6 +13,8 @@ import IpDetail from 'components/ipDetail';
 import {BOTTOM_NAVIGATION_PROFILE} from 'routes/const';
 import {useAppNavigation} from 'hooks/navigation';
 
+// I use react-api-wrapper-hook because its written by me and i want to show my skills
+
 const {
   navigation: {dashboard: title},
   dashboard,
@@ -33,6 +35,7 @@ const Dashboard = () => {
           {dashboard.ip.title}
         </VText>
         <VInput
+          keyboardType="number-pad"
           onPressButton={() =>
             fetch({
               url: `${WHO_IS_API_URL}/${ipValue}`,

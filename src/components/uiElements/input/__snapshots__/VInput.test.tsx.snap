@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VInput component renders correctly with custom marginTopRatio 1`] = `
+<View
+  alignItems="center"
+  fullWidth={false}
+  marginTopRatio={2}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 13.34,
+        "paddingHorizontal": 0,
+        "paddingVertical": 0,
+      },
+      undefined,
+    ]
+  }
+>
+  <TextInput
+    placeholderTextColor="#A3ACB8"
+    style={
+      [
+        {
+          "backgroundColor": "#fff",
+          "borderBottomLeftRadius": 15,
+          "borderBottomWidth": 1,
+          "borderColor": "#BED2E9",
+          "borderLeftWidth": 1,
+          "borderTopLeftRadius": 15,
+          "borderTopWidth": 1,
+          "fontFamily": "Inter-Medium",
+          "fontSize": 15,
+          "height": 80.03999999999999,
+          "padding": 30,
+          "width": "80%",
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          [
+            {
+              "backgroundColor": "#fff",
+              "borderBottomRightRadius": 15,
+              "borderBottomWidth": 1,
+              "borderColor": "#BED2E9",
+              "borderRightWidth": 1,
+              "borderTopRightRadius": 15,
+              "borderTopWidth": 1,
+              "height": 80.03999999999999,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <SvgMock
+        fill="#000"
+        style={
+          {
+            "transform": [
+              {
+                "rotate": "-90deg",
+              },
+            ],
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`VInput component renders correctly with default props 1`] = `
+<View
+  alignItems="center"
+  fullWidth={false}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "paddingHorizontal": 0,
+        "paddingVertical": 0,
+      },
+      undefined,
+    ]
+  }
+>
+  <TextInput
+    placeholderTextColor="#A3ACB8"
+    style={
+      [
+        {
+          "backgroundColor": "#fff",
+          "borderBottomLeftRadius": 15,
+          "borderBottomWidth": 1,
+          "borderColor": "#BED2E9",
+          "borderLeftWidth": 1,
+          "borderTopLeftRadius": 15,
+          "borderTopWidth": 1,
+          "fontFamily": "Inter-Medium",
+          "fontSize": 15,
+          "height": 80.03999999999999,
+          "padding": 30,
+          "width": "80%",
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      fullWidth={false}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 0,
+            "paddingHorizontal": 0,
+            "paddingVertical": 0,
+          },
+          [
+            {
+              "backgroundColor": "#fff",
+              "borderBottomRightRadius": 15,
+              "borderBottomWidth": 1,
+              "borderColor": "#BED2E9",
+              "borderRightWidth": 1,
+              "borderTopRightRadius": 15,
+              "borderTopWidth": 1,
+              "height": 80.03999999999999,
+            },
+            undefined,
+          ],
+        ]
+      }
+    >
+      <SvgMock
+        fill="#000"
+        style={
+          {
+            "transform": [
+              {
+                "rotate": "-90deg",
+              },
+            ],
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

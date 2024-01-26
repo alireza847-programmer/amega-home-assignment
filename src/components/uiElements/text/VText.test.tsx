@@ -3,10 +3,10 @@ import VText from './index'; // replace with the actual path
 import {it, describe, expect, jest} from '@jest/globals';
 import {ThemeProvider} from '@emotion/react';
 import {theme} from 'themes/emotion';
-import {TextProps} from 'types/components/uiElements/text';
+import {VTextProps} from 'types/components/uiElements/text';
 import {render} from '@testing-library/react-native';
 
-const Component = (props: PropsWithChildren<TextProps>) => (
+const Component = (props: PropsWithChildren<VTextProps>) => (
   <ThemeProvider theme={theme}>
     <VText {...props}>{props.children}</VText>
   </ThemeProvider>

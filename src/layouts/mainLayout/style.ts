@@ -17,9 +17,9 @@ export const Header = styled(VRow)(({theme}) => ({
     width: 0,
   },
   backgroundColor: theme.colors.backgroundColor,
-  height: hp(10),
+  height: Platform.OS === 'android' ? hp(7) : hp(10),
   alignItems: 'center',
-  paddingTop: theme.verticalRem * 6,
+  paddingTop: Platform.OS === 'android' ? 0 : theme.verticalRem * 6,
   elevation: 10,
 }));
 
@@ -30,5 +30,5 @@ export const ChildrenWrapper = styled.View(({}) => ({
 export const CloseIcon = styled(VRow)(({theme}) => ({
   position: 'absolute',
   left: theme.HorizontalRem * 4,
-  top: theme.verticalRem * 10,
+  ...(Platform.OS === 'ios' && {top: theme.verticalRem * 10}),
 }));

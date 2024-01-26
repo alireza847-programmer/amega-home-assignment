@@ -5,4 +5,5 @@ export const IpTracker = styled.View(({theme}) => ({
   backgroundColor: theme.colors.button.primary,
   width: wp(100),
   alignItems: 'center',
+  marginTop: 10,
 }));

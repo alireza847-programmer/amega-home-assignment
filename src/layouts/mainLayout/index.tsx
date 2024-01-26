@@ -6,20 +6,22 @@ import VRow from 'components/uiElements/row';
 import {CloseSvg} from 'assets/svgs';
 import {theme} from 'themes/emotion';
 import {TouchableOpacity} from 'react-native';
-import {useAppNavigation} from 'hooks/navigation';
 
 const MainLayout = (props: PropsWithChildren<MainLayoutProps>) => {
-  const {children, title = '', withClose = true, withHeader} = props;
-  const navigation = useAppNavigation();
+  const {
+    children,
+    title = '',
+    onClosePress = () => {},
+    withClose = true,
+    withHeader,
+  } = props;
   return (
     <Container>
       {withHeader && (
         <Header alignItems="center" justifyContent="center">
           {withClose && (
             <CloseIcon fullWidth={false}>
-              <TouchableOpacity
-                onPress={() => navigation.goBack()}
-                activeOpacity={0.8}>
+              <TouchableOpacity onPress={onClosePress} activeOpacity={0.8}>
                 <CloseSvg fill={theme.colors.button.primary} />
               </TouchableOpacity>
             </CloseIcon>

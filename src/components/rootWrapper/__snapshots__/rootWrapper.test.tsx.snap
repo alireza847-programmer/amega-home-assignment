@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RootWrapper component matches snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#fff",
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+/>
+`;

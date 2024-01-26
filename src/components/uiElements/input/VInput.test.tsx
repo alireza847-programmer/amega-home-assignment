@@ -14,12 +14,14 @@ const Component = (props: VInputProps) => (
 
 describe('VInput component', () => {
   it('renders correctly with default props', () => {
-    const {toJSON} = render(<Component />);
+    const {toJSON} = render(<Component onPressButton={() => {}} />);
     expect(toJSON()).toMatchSnapshot();
   });
 
   it('renders correctly with custom marginTopRatio', () => {
-    const {toJSON} = render(<Component marginTopRatio={2} />);
+    const {toJSON} = render(
+      <Component marginTopRatio={2} onPressButton={() => {}} />,
+    );
     expect(toJSON()).toMatchSnapshot();
   });
 });

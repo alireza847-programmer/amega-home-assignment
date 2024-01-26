@@ -6,8 +6,6 @@ import {theme} from 'themes/emotion';
 import {test, expect} from '@jest/globals';
 import {MainLayoutProps} from 'types/layouts/mainLayout';
 
-const YourIcon = () => <svg>Custom Icon</svg>;
-
 const Component = (props: PropsWithChildren<MainLayoutProps>) => (
   <ThemeProvider theme={theme}>
     <MainLayout {...props} />
@@ -23,17 +21,13 @@ test('MainLayout component snapshot', () => {
 
 test('MainLayout component snapshot with close button and custom right icon', () => {
   const tree = renderer
-    .create(
-      <Component withHeader={true} withClose={true} rightIcon={<YourIcon />} />,
-    )
+    .create(<Component withHeader={true} withClose={true} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 test('MainLayout component snapshot with logo', () => {
-  const tree = renderer
-    .create(<Component withHeader={true} withLogo={true} />)
-    .toJSON();
+  const tree = renderer.create(<Component withHeader={true} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 

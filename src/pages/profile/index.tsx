@@ -1,5 +1,6 @@
 import IpDetail from 'components/ipDetail';
 import VRow from 'components/uiElements/row';
+import {useAppNavigation} from 'hooks/navigation';
 import MainLayout from 'layouts/mainLayout';
 import texts from 'locales/en';
 import React from 'react';
@@ -12,8 +13,13 @@ const {
 } = texts;
 const Profile = (props: ProfileProps) => {
   const {route} = props;
+  const navigation = useAppNavigation();
   return (
-    <MainLayout withClose withHeader title={profile}>
+    <MainLayout
+      onClosePress={() => navigation.goBack()}
+      withClose
+      withHeader
+      title={profile}>
       <VRow marginTopRatio={5} justifyContent="center">
         <Image
           source={
