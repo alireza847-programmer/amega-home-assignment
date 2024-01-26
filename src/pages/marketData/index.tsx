@@ -1,11 +1,12 @@
 import VText from 'components/uiElements/text';
 import MainLayout from 'layouts/mainLayout';
 import texts from 'locales/en';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {FlatList} from 'react-native';
 import useWebSocket, {ReadyState} from 'react-native-use-websocket';
 import {TradeItem} from './style';
 import {BINANCE_WEB_SOCLET_URL, TradeItemDto} from 'types/api/binance';
+import {useFocusEffect} from '@react-navigation/native';
 
 const {
   navigation: {marketData},
@@ -26,12 +27,14 @@ const MarketData = () => {
       }
     },
   });
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setData(prevData => [...prevData, ...lastJsonMessage.current]); // Update data every 900 milliseconds
-    }, 1000);
-    return () => clearTimeout(interval);
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      const interval = setInterval(() => {
+        setData(prevData => [...prevData, ...lastJsonMessage.current]); // Update data every 900 milliseconds
+      }, 1000);
+      return () => clearTimeout(interval);
+    }, []),
+  );
   useEffect(() => {
     lastJsonMessage.current = [];
     flatListRef.current?.scrollToEnd();
