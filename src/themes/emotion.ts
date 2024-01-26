@@ -43,6 +43,10 @@ export const theme: EmotionThemeType = {
       fontFamily: Fonts.medium,
       fontSize: 15,
     },
+    regular12: {
+      fontFamily: Fonts.regular,
+      fontSize: 10,
+    },
     semiBold16: {
       fontFamily: Fonts.semiBold,
       fontSize: 16,

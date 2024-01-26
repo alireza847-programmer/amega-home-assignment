@@ -32,6 +32,7 @@ export interface EmotionThemeType {
   fonts: {
     bold21: FontProps;
     medium15: FontProps;
+    regular12: FontProps;
     semiBold16: FontProps;
     semiBold18: FontProps;
     regular16: FontProps;

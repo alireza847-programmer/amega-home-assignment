@@ -4,7 +4,8 @@ export interface VTextProps {
     | 'medium15'
     | 'semiBold16'
     | 'semiBold18'
-    | 'regular16';
+    | 'regular16'
+    | 'regular12';
   color?: string;
   textAlign?: 'center' | 'auto' | 'left' | 'right' | 'justify';
   marginTopRatio?: number;

@@ -43,12 +43,12 @@ const IpDetail = (props: IpDetailProps) => {
         return (
           <View style={{width: wp(20)}} key={index}>
             <VText
-              typography="semiBold16"
+              typography="medium15"
               color={theme.colors.textColor.button.primary}>
               {title}
             </VText>
             <VText
-              typography="medium15"
+              typography="regular12"
               marginTopRatio={1}
               color={theme.colors.textColor.placeHolder}>
               {value}
