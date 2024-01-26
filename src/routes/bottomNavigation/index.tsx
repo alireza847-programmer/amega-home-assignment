@@ -7,7 +7,7 @@ import {
   BOTTOM_NAVIGATION_PROFILE,
 } from 'routes/const';
 import texts from 'locales/en';
-import {PlusSvg} from 'assets/svgs';
+import {DashboardSvg, MarketSvg, PlusSvg, ProfileSvg} from 'assets/svgs';
 import Profile from 'pages/profile';
 import {BottomNavigationRoute} from 'types/routes/bottomNavigation';
 import MarketData from 'pages/marketData';
@@ -35,7 +35,11 @@ const tabs: {
     name: BOTTOM_NAVIGATION_DASHBOARD,
     componenet: Dashboard,
     icon: ({focused, size}: {focused: boolean; size: number}) => (
-      <PlusSvg fill={renderIconColor(focused)} width={size} height={size} />
+      <DashboardSvg
+        fill={renderIconColor(focused)}
+        width={size * 0.8}
+        height={size * 0.8}
+      />
     ),
   },
   {
@@ -43,7 +47,11 @@ const tabs: {
     name: BOTTOM_NAVIGATION_MARKET_DATA,
     componenet: MarketData,
     icon: ({focused, size}: {focused: boolean; size: number}) => (
-      <PlusSvg fill={renderIconColor(focused)} width={size} height={size} />
+      <MarketSvg
+        fill={renderIconColor(focused)}
+        width={size * 0.8}
+        height={size * 0.8}
+      />
     ),
   },
   {
@@ -51,7 +59,11 @@ const tabs: {
     name: BOTTOM_NAVIGATION_PROFILE,
     componenet: Profile,
     icon: ({focused, size}: {focused: boolean; size: number}) => (
-      <PlusSvg fill={renderIconColor(focused)} width={size} height={size} />
+      <ProfileSvg
+        fill={renderIconColor(focused)}
+        width={size * 0.8}
+        height={size * 0.8}
+      />
     ),
   },
 ];
